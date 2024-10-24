@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+      function isUsernamePresent(username, userList) {
+    // Check if the username exists in the userList
+    return userList.includes(username);
+}
+
+const users = ["vipin", "arjun", "abhay", "sumit"];
+const usernameToCheck = "arjun";
+
+if (isUsernamePresent(usernameToCheck, users)) {
+    console.log(`${usernameToCheck} is present in the user list.`);
+} else {
+    console.log(`${usernameToCheck} is not present in the user list.`);
+}
+
+    </script>
+</body>
+</html>

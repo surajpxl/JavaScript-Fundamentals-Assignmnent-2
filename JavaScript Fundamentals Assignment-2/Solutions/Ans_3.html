@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const students = [
+    { name: "Mithun", marks: 95 },
+    { name: "Prabir", marks: 75 },
+    { name: "Alka", marks: 92 },
+    { name: "Shivam", marks: 70 },
+    { name: "Arun", marks: 99 },
+];
+
+function congratulateTopStudents(studentList) {
+    // Filter students who scored more than 90 and log congratulatory messages
+    studentList.forEach(student => {
+        if (student.marks > 90) {
+            console.log(`Congratulations ${student.name}! You have cleared the exam.`);
+        }
+    });
+}
+
+// Call the function with the student list
+congratulateTopStudents(students);
+
+  </script>
+</body>
+</html>

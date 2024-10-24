@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calculateTotalCartValue(...prices) {
+        // Use the reduce method to calculate the total sum of the prices
+        return prices.reduce((total, price) => total + price, 0);
+      }
+
+      const total = calculateTotalCartValue(125, 20, 30);
+      console.log(`The total cart value is: Rs.${total}`);
+    </script>
+  </body>
+</html>

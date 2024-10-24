@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const products = [
+    { name: "Laptop", price: 120000 },
+    { name: "Mobile", price: 70000 },
+    { name: "Laptop Bag", price: 20000 },
+    { name: "Watch", price: 20000 },
+    { name: "Mobile Charger", price: 1500 },
+];
+
+function findMaxMinPriceProducts(productList) {
+    // Initialize variables to store max and min products
+    let maxProduct = productList[0];
+    let minProduct = productList[0];
+
+    // Iterate through the product list to find max and min
+    productList.forEach(product => {
+        if (product.price > maxProduct.price) {
+            maxProduct = product;
+        }
+        if (product.price < minProduct.price) {
+            minProduct = product;
+        }
+    });
+
+    // Print the results
+    console.log(`Product with the highest price: ${maxProduct.name} - Rs.${maxProduct.price}`);
+    console.log(`Product with the lowest price: ${minProduct.name} - Rs.${minProduct.price}`);
+}
+
+// Call the function with the products array
+findMaxMinPriceProducts(products);
+
+  </script>
+</body>
+</html>

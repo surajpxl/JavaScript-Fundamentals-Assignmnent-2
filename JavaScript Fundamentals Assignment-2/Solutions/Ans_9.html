@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function uniqueCharactersCheck(inputString) {
+    const charSet = new Set();
+
+    for (const char of inputString) {
+        if (charSet.has(char)) {
+            console.log("The input string contains duplicates.");
+            return false;
+        }
+        charSet.add(char);
+    }
+    console.log("The input string contains only unique characters.");
+    return true;
+}
+
+uniqueCharactersCheck("mithun")
+// OUTPUT: The input string contains unique characters.
+
+uniqueCharactersCheck("anurag")
+// OUTPUT: The input string contains duplicates.
+  </script>
+</body>
+</html>
